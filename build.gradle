@@ -30,7 +30,7 @@ buildscript {
     }
 }
 
-apply plugin: 'idea'
+apply plugin: 'eclipse'
 
 group = 'com.linecorp.bot'
 version = '1.6.0'
