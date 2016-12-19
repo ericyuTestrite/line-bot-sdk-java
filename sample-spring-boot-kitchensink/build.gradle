@@ -17,7 +17,11 @@
 apply plugin: 'org.springframework.boot'
 
 dependencies {
-		compile fileTree('../libs')
+	//compile fileTree('../libs')
     compile project(':line-bot-spring-boot')
+
+    compile group: 'org.apache.httpcomponents', name: 'httpcore', version: '4.3.3'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.3.6'
+    
 }
 

@@ -368,11 +368,11 @@ public class KitchenSinkController {
                 break;
             default:
                 log.info("Returns echo message {}: {}", replyToken, text);
-                try {
-									text = com.tr.luis.execute.LuisRun.doRun(text);
-								} catch (Exception e) {
-									e.printStackTrace();
-								}
+				try {
+					text = com.testritegroup.bot.luis.execute.LuisRun.doRun(text);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
                 this.replyText(
                         replyToken,
                         text
